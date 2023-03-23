@@ -1,6 +1,6 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
-const bcrypt= require("bcrypt")
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
+const bcrypt = require("bcrypt");
 class User extends Model {}
 
 User.init(
@@ -13,9 +13,9 @@ User.init(
     },
     username: {
       type: DataTypes.STRING,
-      // prevents null values
+
       allowNull: false,
-      // will only allow alphanumeric characters
+
       validate: {
         isAlphanumeric: true,
       },
@@ -31,7 +31,7 @@ User.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-      // must be longer than 8 characters
+
       validate: {
         len: [8],
       },
@@ -48,10 +48,8 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: "User",
   }
 );
 
 module.exports = User;
-
-
