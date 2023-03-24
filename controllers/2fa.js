@@ -1,7 +1,7 @@
+const router = require('express').Router();
 const speakeasy = require('speakeasy');
 const uuid = require('uuid');
-
-const app = express();
+const { User } = require('../models');
 
 app.use(express.json())
 
@@ -73,7 +73,4 @@ app.post ('/api/validate', (req, res) => {
   }
 })
 
-
-const PORT = process.env.PORT || 3001;
-
-app.listen(PORT, () => console.log (`Server Running ${PORT}`))
+module.exports = router;
