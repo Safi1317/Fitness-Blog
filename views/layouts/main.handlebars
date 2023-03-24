@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Blog</title>
-    <link href="/style.css" rel="stylesheet"/>
-</head>
-<body>
-    <nav class="navbar">
-  <div class="container">
-    <div id="navMenu" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          Home
-        </a>
-        <a class="navbar-item">
-          Documentation
-        </a>
-      </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-dark">Github</a>
-            <a class="button is-link">Download</a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Blog</title>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Fitness Talks</h1>
+    <h2>Stop Guessing and Stressing About How to Workout!</h2>
+  </header>
+  <nav class="navbar">
+  <a href="/">Home</a>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+  </nav>
+
+t
+    <div class="container">
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            Post
+          </a>
+          <a class="navbar-item">
+            Comments
+          </a>
+          <a class="navbar-item">
+            Log In
+          </a>
+          <a class="navbar-item">
+            Log Out
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-dark">Github</a>
+              <a class="button is-link">Download</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<section class="hero is-link is-fullheight-with-navbar">
-  <div class="hero-body">
-    <p class="title">
-      Fullheight hero with navbar
-    </p>
-  </div>
-</section>
+  <section class="hero is-link is-fullheight-with-navbar">
+    <div class="hero-body">
+      <p class="title">
+        Fullheight hero with navbar
+      </p>
+    </div>
+  </section>
 </body>
+
 </html>
