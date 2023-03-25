@@ -1,5 +1,10 @@
 # Fitness-Talks
+
 ## Description
+Fitness talks is created based on the wellness of an indivdual using a few fitness exercises. The fact is that with these few fitness exercises you can change your energy level from feeling low to fully being productive. These exercises can be done by any individual. The fitness exercises will
+be consistent in order to maintain a balanced health and energy auras. The more consistant the individual becomes with this work out the quicker the results will appear. 
+
+The fitness talks is a combination of consistency and hard work. The work out consistency does not change if the individual does not give up or quit they will succeed and the result might take some time but eventually they will reach there goal.
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
