@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <title>Fitness Blog</title>
 </head>
 
 <body>
     <header>
-        <img src="./public/images/fitneses_talk logo.png" alt="logo">
+        <img src="/images/fitneses_talk_logo.png" alt="logo">
         <nav class="navbar">
-            <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/">My Work</a></li>
                     <li><a href="/">Login</a></li>
                 </ul>
-            </nav>
                <nav>
         {{#if logged_in}}
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login"></a>
         {{/if}}
       </nav> 
     </header>

@@ -1,24 +1,22 @@
 const loginScreen = async (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    const userEmail = document.querySelector('email-login').value.trim();
-    const userPassword = document.querySelector('login-input').value.trim();
+  const email = document.querySelector("#email-login").value.trim();
+  const password = document.querySelector("#password-login").value.trim();
 
-    if (userEmail && userPassword) {
+  if (email && password) {
+    const response = await fetch("/api/users/login", {
+      method: "POST",
+      body: JSON.stringify({ email, password }),
+      headers: { "Content-Type": "application/json" },
+    });
 
-        const userResponse = await fetch('api/user/login', {
-            method: 'POST',
-            body: JSON.stringify({userEmail, userPassword }),
-            headers: {'Content-Type': 'application/json' },
-        });
-
-        if (userResponse.ok) {
-            document.location.replace('/');
-        } else {
-            alert('failed to login');
-        }
+    if (response.ok) {
+      document.location.replace("/");
+    } else {
+      alert("Failed to log in.");
     }
+  }
 };
 
-document.querySelector('.login-form').addEventListener('submit', loginScreen);
-
+document.querySelector(".login-form").addEventListener("submit", loginScreen);
