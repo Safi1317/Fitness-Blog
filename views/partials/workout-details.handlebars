@@ -1,15 +1,14 @@
 <section class="card">
   <a href="#workout/{{id}}">
-    <header> {{Category}}</header>
+    <header> {{name}}</header>
 
     <div class="card-body">
-      <img src="/images/{{post.activity}}" alt="{{post.description}}" />
-      <p>By: {{user_id}}</p>
-      <p>Workout: {{activity}}</p>
+      <img src="/images/{{workouts.[0].filename}}" alt="{{workouts.[0].description}}">
       <p>How to: {{description}}</p>
       <p>How much to do: {{reps}}</p>
       <p>Difficulty: {{difficulty_level}}</p>
       <p>Whats Needed: {{equipment}}</p>
+      <p>By: {{username}}</p>
     </div>
   </a>
 </section>

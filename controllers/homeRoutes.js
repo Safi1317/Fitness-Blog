@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
     );
 
     res.render('homepage', {
-      activities
+      activities,
     });
 
   } catch (err) {
