@@ -1,14 +1,15 @@
 const sequelize = require('../config/connection');
 const seedComment = require('./comment-seed');
-const seedPost = require('./post-seed');
+const seedActivity = require('./activity-seed');
 const seedUser = require('./user-seed');
+const seedWorkout = require('./workout-seed');
 
 const seedAll = async () => {
     await sequelize.sync({ force: true });
 
+    await seedActivity();
     await seedUser();
-
-    await seedPost();
+    await seedWorkout();
 
     await seedComment();
 

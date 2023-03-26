@@ -1,24 +1,45 @@
 const User = require("./user");
-const Post = require("./Post");
-const Comment = require("./Comment");
+const Activity = require("./activity");
+const Workout = require("./workout")
+const Comment = require("./comment");
 
-User.hasMany(Post, {
+
+Activity.hasMany(Workout, {
+  foreignKey: "activity_id",
+  onDelete: "CASCADE",
+  constraints: false
+});
+
+Workout.belongsTo(Activity, {
+  foreignKey: "activity_id",
+  onDelete: "CASCADE",
+  constraints: false
+});
+
+
+User.hasMany(Workout, {
   foreignKey: "user_id",
+  onDelete: "CASCADE",
+  constraints: false
 });
-Post.hasMany(Comment, {
-  foreignKey: "post_id",
-});
-User.hasMany(Comment, {
+
+Workout.belongsTo(User, {
   foreignKey: "user_id",
+  onDelete: "CASCADE",
+  constraints: false
 });
-Post.belongsTo(User, {
-  foreignKey: "user_id",
+
+
+Workout.hasMany(Comment, {
+  foreignKey: "workout_id",
+  onDelete: "CASCADE",
+  constraints: false
 });
+
 Comment.belongsTo(User, {
   foreignKey: "user_id",
-});
-Comment.belongsTo(Post, {
-  foreignKey: "post_id",
+  onDelete: "CASCADE",
+  constraints: false
 });
 
-module.exports = { User, Post, Comment };
+module.exports = { User, Activity, Workout, Comment };
