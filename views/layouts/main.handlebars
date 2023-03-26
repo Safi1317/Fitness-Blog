@@ -2,6 +2,26 @@
 <html lang="en">
 
 <head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+  <title>Fitness Blog</title>
+</head>
+
+<body>
+  <header>
+    <img src="./public/images/fitneses_talk logo.png" alt="logo">
+    <nav class="navbar">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">My Work</a></li>
+          <li><a href="/">Login</a></li>
+        </ul>
+      </nav>
+      <nav>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,22 +44,21 @@
         {{else}}
         <a href="/login"></a>
         {{/if}}
-      </nav> 
-    </header>
+      </nav>
+  </header>
 
-    <main>
-        <aside>
-            <h2>Welcome to our Fitness and Health Lifestyle Blog</h2>
-        </aside>
-        <div class="activity">
-            {{{body}}}
-        </div>
-    </main>
+  <main>
+    <aside>
+      <h2>Welcome to our Fitness and Health Lifestyle Blog</h2>
+    </aside>
+    <div class="activity">
+      {{{body}}}
+    </div>
+  </main>
 
-    {{#if logged_in}}
-    <script src="/js/logout.js"></script>
-    {{/if}}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
-
