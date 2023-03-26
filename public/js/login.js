@@ -1,8 +1,8 @@
 const loginScreen = async (event) => {
     event.preventDefault();
 
-    const userEmail = document.querySelector('#').value.trim();
-    const userPassword = document.querySelector('#').value.trim();
+    const userEmail = document.querySelector('email-login').value.trim();
+    const userPassword = document.querySelector('login-input').value.trim();
 
     if (userEmail && userPassword) {
 
@@ -20,5 +20,5 @@ const loginScreen = async (event) => {
     }
 };
 
-document.querySelector('').addEventListener('', loginScreen);
+document.querySelector('.login-form').addEventListener('submit', loginScreen);
 
