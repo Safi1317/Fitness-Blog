@@ -18,12 +18,16 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/">My Work</a></li>
                     <li><a href="/">Login</a></li>
-                    <li><a href="/">Logout</a></li>
                 </ul>
             </nav>
+               <nav>
+        {{#if logged_in}}
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav> 
     </header>
-
-
 
     <main>
         <aside>
@@ -33,6 +37,10 @@
             {{{body}}}
         </div>
     </main>
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
