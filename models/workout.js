@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Post extends Model {}
+class Workout extends Model { }
 
-Post.init(
+Workout.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,21 +11,13 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    category: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    acivity: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isAlphanumeric: true,
-      },
     },
     description: {
       type: DataTypes.STRING,
-      required: true,
-      trim: true,
+      allowNull: false,
     },
 
     difficulty_level: {
@@ -41,6 +33,18 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    activity_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "activity",
+        key: "id",
+      },
+    },
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -55,8 +59,8 @@ Post.init(
     timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: "Post",
+    modelName: "workout",
   }
 );
 
-module.exports = Post;
+module.exports = Workout;
