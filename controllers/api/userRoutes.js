@@ -1,10 +1,9 @@
 const router = require("express").Router();
 const { User } = require("../../models");
 const bcrypt = require("bcrypt");
-const withAuth = require("../../utils/auth");
 
 // Login
-router.get("/", withAuth, async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const dbUserData = await User.findOne({
       where: {
