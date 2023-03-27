@@ -9,9 +9,9 @@ The fitness talks is a combination of consistency and hard work. The work out co
 
 Here is the link to our webpage: to be added after live deployment.
 
-    ```md
-    ![alt text](public/images/fitneses_talk_logo.png)
-    ```
+    
+    ![Fitness blog photo](public/images/fitneses_talk_logo.png)
+
 
 
 ## Table of Contents
@@ -36,10 +36,7 @@ Here is the link to our webpage: to be added after live deployment.
 
  - After a sucessfull installation, Log in to the app using your email.
  - Choose the fitness exercises you want to participate in.
- 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
 
 ## Credits
 
