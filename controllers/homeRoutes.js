@@ -4,17 +4,16 @@ const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
-    const dbActivityData = await Activity.findAll({
-    });
+    const dbActivityData = await Activity.findAll({});
 
     const activities = dbActivityData.map((activity) =>
       activity.get({ plain: true })
     );
 
+
     res.render('homepage', {
       activities,
     });
-
   } catch (err) {
     res.status(500).json(err);
   }
