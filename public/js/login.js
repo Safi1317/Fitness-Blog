@@ -19,4 +19,4 @@ const loginScreen = async (event) => {
   }
 };
 
-document.querySelector(".login-form").addEventListener("submit", loginScreen);
+document.querySelector("#loginModal").addEventListener("submit", loginScreen);
