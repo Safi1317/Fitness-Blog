@@ -9,8 +9,9 @@ The fitness talks is a combination of consistency and hard work. The work out co
 
 Here is the link to our webpage: to be added after live deployment.
 
+   ![fitneses_talk_logo](https://user-images.githubusercontent.com/119647704/228038259-1e247926-f5f6-45b0-93d7-b3f4cca3502c.png)
+
     
-    ![Fitness blog photo](./public/images/fitneses_talk_logo.png)
 
 
 
