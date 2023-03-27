@@ -9,8 +9,9 @@ router.get("/", async (req, res) => {
     const activities = dbActivityData.map((activity) =>
       activity.get({ plain: true })
     );
-    console.log(activities);
-    res.render("homepage", {
+
+
+    res.render('homepage', {
       activities,
     });
   } catch (err) {

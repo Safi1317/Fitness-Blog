@@ -19,17 +19,19 @@ Workout.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-
     difficulty_level: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-
     equipment: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     reps: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    filename: {
       type: DataTypes.STRING,
       allowNull: false,
     },
