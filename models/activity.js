@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Activity extends Model {}
+class Activity extends Model { }
 
 Activity.init(
 
@@ -24,23 +24,13 @@ Activity.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    benefit: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-  },
-  {
-    sequelize,
-    freezeTableName: true,
-    underscored: true,
-    modelName: "activity",
-  }
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: "activity",
+    }
 );
 
 module.exports = Activity;
