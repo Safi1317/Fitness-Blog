@@ -10,8 +10,7 @@ router.get("/", async (req, res) => {
       activity.get({ plain: true })
     );
 
-
-    res.render('homepage', {
+    res.render("homepage", {
       activities,
     });
   } catch (err) {
