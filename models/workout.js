@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Workout extends Model {}
+class Workout extends Model { }
 
 Workout.init(
   {
@@ -28,10 +28,6 @@ Workout.init(
       allowNull: false,
     },
     reps: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    filename: {
       type: DataTypes.STRING,
       allowNull: false,
     },
