@@ -3,8 +3,9 @@ const { Workout } = require("../models");
 const workoutData = [
   {
     name: "swimming",
-    filename: "swimmers-gd79b7b5ac_1920.jpg",
-    description: "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
+    filename: "swimmiing.avif",
+    description:
+      "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
     difficulty_level: "moderate",
     equipment: "pool",
     reps: "10",
@@ -14,8 +15,9 @@ const workoutData = [
   },
   {
     name: "Jump Rope",
-    filename: "swimmers-gd79b7b5ac_1920.jpg",
-    description: "test",
+    filename: "jumprope.jpg",
+    description:
+      "Jumping rope is a form of exercise that involves swinging a rope around your body and jumping over it as it passes under your feet.",
     difficulty_level: "moderate",
     equipment: "rope",
     reps: "10",
@@ -25,8 +27,9 @@ const workoutData = [
   },
   {
     name: "Push-Up",
-    filename: "swimmers-gd79b7b5ac_1920.jpg",
-    description: "test",
+    filename: "pushup.gif",
+    description:
+      "This exercise works the pectoral muscles in your chest and the triceps. These are the muscles in the back of your upper arms.",
     difficulty_level: "intense",
     equipment: "a moderate-heavy weight",
     reps: "30 to 60 secs",
@@ -36,8 +39,9 @@ const workoutData = [
   },
   {
     name: "Deadlift",
-    filename: "swimmers-gd79b7b5ac_1920.jpg",
-    description: "test",
+    filename: "deadlift.gif",
+    description:
+      "The deadlift is a hip-hinging movement that targets the hamstrings and glutes.",
     difficulty_level: "intense",
     equipment: "a moderate-heavy weight",
     reps: "30 to 60 secs",
@@ -46,9 +50,9 @@ const workoutData = [
     user_id: 1,
   },
   {
-    name: "Pop Squat",
-    filename: "swimmers-gd79b7b5ac_1920.jpg",
-    description: "test",
+    name: "Squat",
+    filename: "squatgif.gif",
+    description: "The squat targets your glutes, quads, and core muscles.",
     difficulty_level: "intense",
     equipment: "rope",
     reps: "10",
@@ -82,7 +86,8 @@ const workoutData = [
   {
     name: "Kundalini yoga",
     filename: "swimmers-gd79b7b5ac_1920.jpg",
-    description: "A kundalini class will really work your core and breath with fast-moving, invigorating postures and breath exercises.",
+    description:
+      "A kundalini class will really work your core and breath with fast-moving, invigorating postures and breath exercises.",
     difficulty_level: "Intense",
     equipment: "mat",
     reps: "10",
