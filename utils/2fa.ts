@@ -18,9 +18,7 @@ interface TwoFactorEntity {
 const generateUserSecret = 
 (userRepo: Repository, twoFactor: TwoFactorEntity) => {
 
-    const secret = generateSecret({
-        otpauth_url: true 
-    })
+    const secret = generateSecret({ otpauth_url: true })
         twoFactor.secret = secret.base32
         userRepo.save(twoFactor)
         return secret
@@ -41,6 +39,7 @@ interface SecretData {
 
 const generateQRCode = async (secret: SecretData) => {
     return await toDataURL(secret.otpauth_url)
+    
 }
 
 //Verifiying the Token
@@ -58,10 +57,25 @@ const verifyToken = (userToken: string, serverSecret: string) : boolean => {
 
 const enableTwoFactor = (
     verified: boolean,
-    repo: Repository,
     twoFactor: TwoFactorEntity) => {
         if (!twoFactor.enabled) {
             twoFactor.enabled = verified
         }
         repo.save(twoFactor)
     }
+
+
+    const secret = generateSecret({ otpauth_url: true })
+    twoFactor.secret = secret.base32
+    userRepo.save(twoFactor)
+    return secret
+
+return await toDataURL(secret.otpauth_url)
+
+
+    const verified = totp.verify({
+        secret: serverSecret,
+        encoding: 'base32',
+        token: userToken
+    })
+    return verified
