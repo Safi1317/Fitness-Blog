@@ -1,5 +1,10 @@
-//Generating a Secret
+const speakeasy = require('speakeasy');
+const QRCode = require('qrcode')
+const express = require('express')
 
+const app = express();
+
+//Generating a Secret
 import { generateSecret } from 'speakeasy'
 
 interface TwoFactorEntity {
@@ -8,6 +13,7 @@ interface TwoFactorEntity {
     secret: string
     enabled: boolean 
 }
+
 
 const generateUserSecret = 
 (userRepo: Repository, twoFactor: TwoFactorEntity) => {
