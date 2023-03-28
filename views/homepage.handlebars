@@ -1,3 +1,16 @@
+
+{{#each activities as |activity|}}
+  <section class="card">
+    <a href="/activity/{{id}}">
+      <header>{{name}}</header>
+      <img src="/images/{{activity.filename}}" alt="{{name}}" width="500px" />
+    </a>
+  </section>
+{{/each}}
+<button id="logout"> logout</button>
+<script src="./js/logout.js"></script>
+
 {{#each activites as |activity|}}
 {{> activity-details}}
 {{/each}}
+
