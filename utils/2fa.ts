@@ -2,73 +2,73 @@ const speakeasy = require('speakeasy');
 const QRCode = require('qrcode')
 const express = require('express')
 
-const app = express();
+// const app = express();
 
-//Generating a Secret
-import { generateSecret } from 'speakeasy'
+// //Generating a Secret
+// import { generateSecret } from 'speakeasy'
 
-interface TwoFactorEntity {
+// interface TwoFactorEntity {
 
-    userId: number
-    secret: string
-    enabled: boolean 
-}
-
-
-const generateUserSecret = 
-(userRepo: Repository, twoFactor: TwoFactorEntity) => {
-
-    const secret = generateSecret({ otpauth_url: true })
-        twoFactor.secret = secret.base32
-        userRepo.save(twoFactor)
-        return secret
-}
-
-interface Repository {
-save: (d: TwoFactorEntity) => any; 
-}
+//     userId: number
+//     secret: string
+//     enabled: boolean 
+// }
 
 
-//Displaying QR Code 
+// const generateUserSecret = 
+// (userRepo: Repository, twoFactor: TwoFactorEntity) => {
 
-import { toDataURL } from 'qrcode'
+//     const secret = generateSecret({ otpauth_url: true })
+//         twoFactor.secret = secret.base32
+//         userRepo.save(twoFactor)
+//         return secret
+// }
 
-interface SecretData {
-    otpauth_url: String
-}
+// interface Repository {
+// save: (d: TwoFactorEntity) => any; 
+// }
 
-const generateQRCode = async (secret: SecretData) => {
-    return await toDataURL(secret.otpauth_url)
+
+// //Displaying QR Code 
+
+// import { toDataURL } from 'qrcode'
+
+// interface SecretData {
+//     otpauth_url: String
+// }
+
+// const generateQRCode = async (secret: SecretData) => {
+//     return await toDataURL(secret.otpauth_url)
     
-}
+// }
 
-//Verifiying the Token
+// //Verifiying the Token
 
-import { totp } from 'speakeasy'
+// import { totp } from 'speakeasy'
 
-const verifyToken = (userToken: string, serverSecret: string) : boolean => {
-    const verified = totp.verify({
-        secret: serverSecret,
-        encoding: 'base32',
-        token: userToken
-    })
-    return verified
-}
+// const verifyToken = (userToken: string, serverSecret: string) : boolean => {
+//     const verified = totp.verify({
+//         secret: serverSecret,
+//         encoding: 'base32',
+//         token: userToken
+//     })
+//     return verified
+// }
 
-const enableTwoFactor = (
-    verified: boolean,
-    twoFactor: TwoFactorEntity) => {
-        if (!twoFactor.enabled) {
-            twoFactor.enabled = verified
-        }
-        repo.save(twoFactor)
-    }
+// const enableTwoFactor = (
+//     verified: boolean,
+//     twoFactor: TwoFactorEntity) => {
+//         if (!twoFactor.enabled) {
+//             twoFactor.enabled = verified
+//         }
+//         repo.save(twoFactor)
+//     }
 
 
     const secret = generateSecret({ otpauth_url: true })
-    twoFactor.secret = secret.base32
-    userRepo.save(twoFactor)
-    return secret
+    // twoFactor.secret = secret.base32
+    // userRepo.save(twoFactor)
+    // return secret
 
 return await toDataURL(secret.otpauth_url)
 
