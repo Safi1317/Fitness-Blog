@@ -67,7 +67,16 @@ router.get("/workout/:id", async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
+<<<<<<< HEAD
   if (req.session.logged_in) return res.redirect("/");
+=======
+  console.log("hit login route");
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+
+>>>>>>> main
   res.render("login");
 });
 
