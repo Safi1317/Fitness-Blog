@@ -1,18 +1,17 @@
 <section class="card">
-  <a href="#workout/{{id}}">
+  <a href="/workout/{{id}}">
     <header> {{name}}</header>
 
     <div class="card-body">
 
-      <img src="/images/{{filename}}" alt="{{description}}" />
+      <img src="/images/{{filename}}" width="500px" />
 
-      <img src="/images/{{workouts.[0].filename}}" alt="{{workouts.[0].description}}">
 
-      <p>How to: {{description}}</p>
-      <p>How much to do: {{reps}}</p>
-      <p>Difficulty: {{difficulty_level}}</p>
-      <p>Whats Needed: {{equipment}}</p>
-      <p>By: {{username}}</p>
+      <p>Benefits of Workout: {{description}}</p>
+      <p>Reps/Sets: {{reps}}</p>
+      <p>Difficulty Level: {{difficulty_level}}</p>
+      <p>Equipment Needed: {{equipment}}</p>
+      <p>Comment Posted By: {{username}}</p>
     </div>
   </a>
 </section>
