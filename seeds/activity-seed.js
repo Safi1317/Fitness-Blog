@@ -25,6 +25,18 @@ const activitydata = [
       "it improved ability to change directions quickly, which fitness professionals may refer to as agility or nimbleness",
     filename: "polymetrics.jpg",
   },
+  {
+    name: "Pilates",
+    benefit:
+      "The goal of Pilates is to balance your muscles by targeting and strengthening",
+    filename: "pilates.jpg",
+  },
+  {
+    name: "Outdoor excercises",
+    benefit:
+      "Outdoor exercise can help ward off seasonal affective disorder (SAD), depression and anxiety.",
+    filename: "exerciseoutdoors.jpg",
+  },
 ];
 
 const seedActivity = () => Activity.bulkCreate(activitydata);
