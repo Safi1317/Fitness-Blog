@@ -73,7 +73,7 @@ const workoutData = [
   },
   {
     name: "jump squats",
-    filename: "splitsquatjumpgif.webp",
+    filename: "Jump-Squats-Gif.gif",
     description: "test",
     difficulty_level: "intense",
     equipment: "rope",
