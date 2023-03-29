@@ -5,7 +5,7 @@ const activitydata = [
     name: "Cardio",
     benefit:
       "Cardio exercises can benefit brain and joint health. It can increase blood flow and improve memory and thinking ability",
-    filename: "cardio.jpg",
+    filename: "cardioimg1.jpg",
   },
   {
     name: "Strength Training",
