@@ -86,3 +86,11 @@
 .activitycard p {
   text-align: center;
 }
+.comment {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  background-color: blue;
+  width: 70%;
+  color: white;
+}
