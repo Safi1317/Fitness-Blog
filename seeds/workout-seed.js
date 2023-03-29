@@ -110,8 +110,8 @@ const workoutData = [
     name: "Running",
     filename: "runninggif.gif",
     description:
-      "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
-    difficulty_level: "easy",
+      "help to build strong bones, as it is a weight bearing exercise. Strengthen muscles and burn plenty of kilojoules",
+    difficulty_level: "moderate",
     equipment: "outside",
     reps: "10",
     username: "safia",
@@ -122,7 +122,7 @@ const workoutData = [
     name: "Hiking",
     filename: "hikinggif.gif",
     description:
-      "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
+      "Hiking is an activity of moderate difficulty, which involves walking across long distances generally on trails or paths.",
     difficulty_level: "moderate",
     equipment: "outside",
     reps: "10",
@@ -132,7 +132,7 @@ const workoutData = [
   },
   {
     name: "Reformer Pilates",
-    filename: "pilatesgif.gif",
+    filename: "reformerpilatesgif.gif",
     description:
       " It improves the working of abdomen muscles and enhances the metabolism which ultimately accelerates the weight loss process.",
     difficulty_level: "moderate",
