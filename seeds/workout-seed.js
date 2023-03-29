@@ -96,7 +96,7 @@ const workoutData = [
     user_id: 1,
   },
   {
-    name: "outdoor exercise",
+    name: "Running",
     filename: "runninggif.gif",
     description:
       "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
@@ -108,7 +108,7 @@ const workoutData = [
     user_id: 1,
   },
   {
-    name: "outdoor exercise",
+    name: "Hiking",
     filename: "hikinggif.gif",
     description:
       "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
