@@ -2,14 +2,12 @@
 
 ## Description
 
-We created "Fitness talks" based on the wellness of an group using a several fitness exercises to help them easily keep fit. Users have to sign in via their username and password afterward they will be able to see the websites homepage, my post, and login page. The user can choose the workout on the fitness exercises on the homepage, the next step is the user will click on the fitness exercise on the home screen and the repetition of the exercise. Once the user completes the first exercise he is more than willing to continue with the rest of the exercises or if user wants to add a exercise of his own he can post it under my post page.
+We created "Fitness talks" based on the wellness of an group using a several fitness exercises to help them easily keep fit. Users have to sign in via their username and password afterward they will be able to see the websites homepage,and login page. The user can choose the workout on the fitness exercises on the homepage. 
 
-
-Here is the link to our webpage: to be added after live deployment.
+Here is the link to our webpage: https://fitnesstalks.herokuapp.com
 
    ![fitneses_talk_logo](https://user-images.githubusercontent.com/119647704/228038259-1e247926-f5f6-45b0-93d7-b3f4cca3502c.png)
-
-    
+   
 
 ## Installation
 
@@ -23,9 +21,8 @@ Here is the link to our webpage: to be added after live deployment.
 ## Usage
 
 - First, you login to the application.
-- You will be prompted with the homepage, my post, login pages. 
+- You will be prompted with the homepage, and login page. 
 - Once you have logged, choose the fitness workout you want to work on.
-- To add the fitness exercise that you would like to achieve, navigate to "my work"
 
 ## Credits
 
