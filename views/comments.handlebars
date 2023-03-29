@@ -1,16 +1,16 @@
 <div class="comments">
   {{#each this}}
     <div class="comment_card">
-      <h3 class="card-header"></h3>
-      <section class="comment card-body">
-        <div class="text">
+      {{! <h3 class="card-header"></h3> }}
+      <div class="comment_body">
+        <p class="text">
           {{comment_text}}
-        </div>
-        <div class="postedby">
-          -{{user_id}},
+        </p>
+        <p class="postedby">
+          {{username}},
           {{created_at}}
-        </div>
-      </section>
+        </p>
+      </div>
     </div>
   {{/each}}
 </div>
