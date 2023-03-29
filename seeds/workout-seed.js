@@ -131,12 +131,24 @@ const workoutData = [
     user_id: 1,
   },
   {
-    name: "Pilates",
+    name: "Reformer Pilates",
     filename: "pilatesgif.gif",
     description:
-      "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
+      " It improves the working of abdomen muscles and enhances the metabolism which ultimately accelerates the weight loss process.",
     difficulty_level: "moderate",
-    equipment: "pool",
+    equipment: "pilates machine",
+    reps: "10",
+    username: "Aliya_jay",
+    activity_id: 5,
+    user_id: 1,
+  },
+  {
+    name: "Mat Pilates",
+    filename: "pilatesgif.gif",
+    description:
+      "It strengthens your hips, pelvic floor, shoulders, legs’ muscles, and lower back.",
+    difficulty_level: "moderate",
+    equipment: "pilates machine",
     reps: "10",
     username: "Aliya_jay",
     activity_id: 5,
