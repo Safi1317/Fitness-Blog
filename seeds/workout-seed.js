@@ -121,7 +121,7 @@ const workoutData = [
   },
   {
     name: "Pilates",
-    filename: "swimmiing.avif",
+    filename: "pilatesgif.gif",
     description:
       "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
     difficulty_level: "moderate",
