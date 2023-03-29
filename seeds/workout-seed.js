@@ -3,7 +3,7 @@ const { Workout } = require("../models");
 const workoutData = [
   {
     name: "swimming",
-    filename: "swimmiing.avif",
+    filename: "swimminggif.gif",
     description:
       "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
     difficulty_level: "moderate",
@@ -15,7 +15,7 @@ const workoutData = [
   },
   {
     name: "Jump Rope",
-    filename: "jumprope.jpg",
+    filename: "jumpropegif.gif",
     description:
       "Jumping rope is a form of exercise that involves swinging a rope around your body and jumping over it as it passes under your feet.",
     difficulty_level: "moderate",
@@ -62,7 +62,7 @@ const workoutData = [
   },
   {
     name: "Split Squat Jump",
-    filename: "swimmers-gd79b7b5ac_1920.jpg",
+    filename: "splitsquatjumpgif.webp",
     description: "test",
     difficulty_level: "intense",
     equipment: "rope",
@@ -74,7 +74,7 @@ const workoutData = [
 
   {
     name: "Vinyasa yoga",
-    filename: "swimmers-gd79b7b5ac_1920.jpg",
+    filename: "yogagif1.webp",
     description: "test",
     difficulty_level: "easy",
     equipment: "mat",
@@ -85,7 +85,7 @@ const workoutData = [
   },
   {
     name: "Kundalini yoga",
-    filename: "swimmers-gd79b7b5ac_1920.jpg",
+    filename: "yogagif2.gif",
     description:
       "A kundalini class will really work your core and breath with fast-moving, invigorating postures and breath exercises.",
     difficulty_level: "Intense",
@@ -93,6 +93,42 @@ const workoutData = [
     reps: "10",
     username: "Aliya_jay",
     activity_id: 3,
+    user_id: 1,
+  },
+  {
+    name: "outdoor exercise",
+    filename: "runninggif.gif",
+    description:
+      "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
+    difficulty_level: "easy",
+    equipment: "outside",
+    reps: "10",
+    username: "safia",
+    activity_id: 6,
+    user_id: 1,
+  },
+  {
+    name: "outdoor exercise",
+    filename: "hikinggif.gif",
+    description:
+      "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
+    difficulty_level: "moderate",
+    equipment: "outside",
+    reps: "10",
+    username: "safia2",
+    activity_id: 6,
+    user_id: 1,
+  },
+  {
+    name: "Pilates",
+    filename: "swimmiing.avif",
+    description:
+      "Works out your chest, arms, legs, glutes and core. Consistent swimming on your back will help these muscle groups grow stronger.",
+    difficulty_level: "moderate",
+    equipment: "pool",
+    reps: "10",
+    username: "Aliya_jay",
+    activity_id: 5,
     user_id: 1,
   },
 ];
