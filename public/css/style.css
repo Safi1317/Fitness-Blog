@@ -86,7 +86,7 @@
 .activitycard p {
   text-align: center;
 }
-.comment {
+.comments {
   display: flex;
   margin: 1rem;
   flex-direction: column;
