@@ -1,3 +1,7 @@
+h2 {
+  display: flex;
+  justify-content: center;
+}
 .logoimg {
   width: 15rem;
   margin: 1rem;
@@ -33,6 +37,7 @@
   align-items: center;
   width: 70vw;
   border-radius: 5px;
+  background-color: rgb(138, 138, 209);
 }
 .login-form {
   display: flex;
@@ -85,4 +90,22 @@
 }
 .activitycard p {
   text-align: center;
+}
+.comments {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  background-color: blue;
+  width: 70%;
+  color: white;
+}
+.new-workout-form {
+  margin: 2rem;
+}
+.add-workout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(124, 119, 165);
+  margin: 1rem;
 }

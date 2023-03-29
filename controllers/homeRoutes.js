@@ -48,7 +48,7 @@ router.get("/activity/:id", async (req, res) => {
   }
 });
 
-//GET one workout 
+//GET one workout
 router.get("/workout/:id", async (req, res) => {
   try {
     const dbWorkoutData = await Workout.findByPk(req.params.id, {});
@@ -61,52 +61,38 @@ router.get("/workout/:id", async (req, res) => {
     // res.status(200).json(dbWorkoutData)
     // const workoutData = dbActivityData.get({ plain: true });
     console.log(dbWorkoutData);
-    res.render("comments", { workouts: [dbWorkoutData.dataValues] });
+    res.render("comment", { workouts: [dbWorkoutData.dataValues] });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-
-
-router.post('/activity/:id', async (req, res) => {
+router.post("/activity/:id", async (req, res) => {
   // create a new workout
   try {
-    const newWorkoutData = await Workout.create({
-      workout_name: req.body.workout_name,
-      workout_benefits: req.body.workout_benefits,
-      workout_reps: req.body.workout_reps,
-      workout_difficulty: req.body.workout_difficulty,
-      workout_equipment: req.body.workout_equipment,
-      workout_username: req.body.workout_username,
-
-    },
+    const newWorkoutData = await Workout.create(
       {
-
+        workout_name: req.body.workout_name,
+        workout_benefits: req.body.workout_benefits,
+        workout_reps: req.body.workout_reps,
+        workout_difficulty: req.body.workout_difficulty,
+        workout_equipment: req.body.workout_equipment,
+        workout_username: req.body.workout_username,
+      },
+      {
         where: {
           id: req.params.id,
-        }
-
-
+        },
       }
-
-    )
+    );
 
     res.status(200).json(newWorkoutData);
-  }
-  catch (err) {
+  } catch (err) {
     res.status(500).json(err);
   }
-
 });
 
-
-
-
-
-
 router.get("/login", (req, res) => {
-
   console.log("hit login route");
   if (req.session.loggedIn) {
     res.redirect("/");
@@ -114,7 +100,6 @@ router.get("/login", (req, res) => {
   }
 
   res.render("login", { loggedIn: req.session.loggedIn });
-
 });
 
 module.exports = router;
