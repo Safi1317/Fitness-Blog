@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-  secret: process.env.SECRET,
+  secret: "coding1234!",
   cookie: {},
   resave: false,
   saveUninitialized: true,
