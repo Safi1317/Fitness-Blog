@@ -1,4 +1,8 @@
-h2 {
+* {
+  margin: 0;
+  padding: 0;
+}
+main h2 {
   display: flex;
   justify-content: center;
 }
