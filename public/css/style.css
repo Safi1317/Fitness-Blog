@@ -23,6 +23,18 @@ main h2 {
 .navlinks li {
   margin: 1rem;
 }
+.navlinks li a {
+  font-weight: 700;
+  font-style: italic;
+  color: #1a1e24;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-right: 60px;
+  position: relative;
+  z-index: 2;
+}
 .activity {
   display: flex;
   flex-wrap: wrap;

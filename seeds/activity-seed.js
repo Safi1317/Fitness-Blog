@@ -35,7 +35,7 @@ const activitydata = [
     name: "Outdoor excercises",
     benefit:
       "Outdoor exercise can help ward off seasonal affective disorder (SAD), depression and anxiety.",
-    filename: "outdoor5.webp",
+    filename: "outdoorimg6.jpg",
   },
 ];
 
