@@ -13,6 +13,7 @@ router.get("/", async (req, res) => {
 
     res.render("homepage", {
       activities,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -73,7 +74,7 @@ router.get("/login", (req, res) => {
     return;
   }
 
-  res.render("login");
+  res.render("login", { loggedIn: req.session.loggedIn });
 });
 
 module.exports = router;
