@@ -16,7 +16,7 @@ const activitydata = [
   {
     name: "Yoga",
     benefit:
-      "it can help build muscle, dramatically boost metabolism, and breathing fully and deeply increases circulation, also helping the metabolism to stay ticking along nicely",
+      "Yoga can help build muscle, dramatically boost metabolism, and breathing fully and deeply increases circulation, also helping the metabolism to stay ticking along nicely",
     filename: "yoga.jpg",
   },
   {
