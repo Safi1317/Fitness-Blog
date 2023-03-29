@@ -17,7 +17,7 @@ const workoutData = [
     name: "Jump Rope",
     filename: "jumpropegif.gif",
     description:
-      "Jumping rope is a form of exercise that involves swinging a rope around your body and jumping over it as it passes under your feet.",
+      "Jumping rope activates multiple muscle groups. As you swing the rope around and jump,you also engage your:Hips,Arms,Abdominals and Shoulders",
     difficulty_level: "moderate",
     equipment: "rope",
     reps: "10",
@@ -86,7 +86,8 @@ const workoutData = [
   {
     name: "Vinyasa yoga",
     filename: "yogagif1.webp",
-    description: "test",
+    description:
+      "In vinyasa classes, movements are coordinated with your breath in order to flow from one pose to another",
     difficulty_level: "easy",
     equipment: "mat",
     reps: "10",
@@ -148,7 +149,7 @@ const workoutData = [
     description:
       "It strengthens your hips, pelvic floor, shoulders, legs’ muscles, and lower back.",
     difficulty_level: "moderate",
-    equipment: "pilates machine",
+    equipment: "mat",
     reps: "10",
     username: "Aliya_jay",
     activity_id: 5,
