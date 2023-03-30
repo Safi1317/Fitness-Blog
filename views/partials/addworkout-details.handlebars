@@ -1,64 +1,80 @@
-<div class='add-workout-container'>
+<div class="add-workout-container">
   <h2>
     Add your favorite workout!
   </h2>
-  <form class='new-workout-form'>
-    <label for='workout_name'>
-      Workout Name:
-    </label>
-    <br />
-    <textarea id='workout_name' name='workout_name' rows='2' cols='30'>
-  {{name}}
-      </textarea>
-    <br />
-    <label for='benefits_workout'>
-      Benefits of Workout:
-    </label>
-    <br />
-    <textarea id='workout_benefits' name='workout_benefits' rows='5' cols='30'>
-   {{ description}}
-      </textarea>
-    <br />
-    <label for='reps'>
-      Reps/Sets:
-    </label>
-    <br />
-    <textarea id='workout_reps' name='workout_reps' rows='2' cols='30'>
-   {{ reps}}
-      </textarea>
-    <br />
-    <br />
-    <label for='difficulty_level'>
-      Difficulty Level:
-    </label>
-    <br />
-    <textarea id='workout_difficulty' name='workout_difficulty' rows='2' cols='30'>
-      {{ difficulty_level}}
-      </textarea>
-    <br />
-    <br />
-    <label for='equipment'>
-      Equipment Needed:
-    </label>
-    <br />
-    <textarea id='workout_equipment' name='workout_equipment' rows='2' cols='30'>
-      {{ equipment}}
-      </textarea>
-    <br />
-    <br />
-    <label for='username'>
-      Posted By:
-    </label>
-    <br />
-    <textarea id='workout_username' name='workout_username' rows='2' cols='30'>
-  {{ username}}
-      </textarea>
-    <br />
-    <br />
-    <button type='submit' value='Submit'>
+  <form class="new-workout-form d-flex flex-column gap-3">
+    <div class="form-group">
+
+      <label for="name">
+        Workout Name:
+      </label>
+
+      <input id="name" name="name" required />
+    </div>
+
+    <div class="form-group">
+
+      <label for="description">
+        Benefits of Workout:
+      </label>
+
+      <input id="description" name="description" required />
+    </div>
+
+    <div class="form-group">
+
+      <label for="reps">
+        Reps/Sets:
+      </label>
+
+      <input id="reps" name="reps" type="number" required />
+    </div>
+
+    <div class="form-group">
+
+      <label for="difficulty_level">
+        Difficulty Level:
+      </label>
+
+      <select id="difficulty_level" name="difficulty_level" required>
+        <option>Select difficulty</option>
+        <option value="intense">intense</option>
+        <option value="moderate">moderate</option>
+        <option value="easy">easy</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+
+      <label for="workout_equipment">
+        Equipment Needed:
+      </label>
+
+      <input id="equipment" name="equipmentt" required />
+    </div>
+
+    <div class="form-group">
+
+      <label for="username">
+        Posted By:
+      </label>
+
+      <input id="username" name="username" required />
+    </div>
+
+    <div class="form-group">
+
+      <label for="user_id">
+        Posted By:
+      </label>
+
+      <input id="user_id" name="user_id" required />
+    </div>
+
+    <button type="submit" value="Submit">
       Submit Post
     </button>
   </form>
 </div>
-</div>
+
 <!-- This is the form for adding a new workout -->
