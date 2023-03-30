@@ -8,6 +8,12 @@ const recommendWorkout = async () => {
       console.log("resAsJson = ", resAsJson);
 
       //   TODO: show some element on the screen with the data from resAsJson
+      for (const scoreRecord of highScores) {
+        var li = document.createElement('li');
+        li.textContent = `${scoreRecord.name} ... ${scoreRecord.score}`;
+        scoreList.appendChild(li);
+    }
+      
       alert(resAsJson[0].name);
     });
 };
