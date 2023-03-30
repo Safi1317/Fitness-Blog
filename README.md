@@ -17,7 +17,7 @@ Here is the link to our webpage: https://fitnesstalks.herokuapp.com
  - Install dependencies (npm install)
  - Run the schema to create a database (source db/schema.sql)
  - Seed the data ( npm run seed )
- - Run the project/ start our server (npm start)
+ - Run the project/ start our server (npm start).
 
 
 ## Usage
