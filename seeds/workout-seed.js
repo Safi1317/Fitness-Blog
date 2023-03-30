@@ -26,20 +26,19 @@ const workoutData = [
     user_id: 1,
   },
   {
-    name: "Push-Up",
-    filename: "pushup.gif",
-    description:
-      "This exercise works the pectoral muscles in your chest and the triceps. These are the muscles in the back of your upper arms.",
+    name: "Squat",
+    filename: "squatgif.gif",
+    description: "The squat targets your glutes, quads, and core muscles.",
     difficulty_level: "intense",
-    equipment: "a moderate-heavy weight",
-    reps: "30 to 60 secs",
-    username: "Safia",
+    equipment: "rope",
+    reps: "10",
+    username: "Riley",
     activity_id: 2,
     user_id: 1,
   },
   {
     name: "Deadlift",
-    filename: "deadlift.gif",
+    filename: "deadliftgif2.webp",
     description:
       "The deadlift is a hip-hinging movement that targets the hamstrings and glutes.",
     difficulty_level: "intense",
@@ -50,13 +49,14 @@ const workoutData = [
     user_id: 1,
   },
   {
-    name: "Squat",
-    filename: "squatgif.gif",
-    description: "The squat targets your glutes, quads, and core muscles.",
+    name: "Push-Up",
+    filename: "pushup2gif.gif",
+    description:
+      "This exercise works the pectoral muscles in your chest and the triceps. These are the muscles in the back of your upper arms.",
     difficulty_level: "intense",
-    equipment: "rope",
-    reps: "10",
-    username: "Riley",
+    equipment: "a moderate-heavy weight",
+    reps: "30 to 60 secs",
+    username: "Safia",
     activity_id: 2,
     user_id: 1,
   },
@@ -145,7 +145,7 @@ const workoutData = [
   },
   {
     name: "Mat Pilates",
-    filename: "pilatesgif.gif",
+    filename: "matpilates2gif.gif",
     description:
       "It strengthens your hips, pelvic floor, shoulders, legs’ muscles, and lower back.",
     difficulty_level: "moderate",
