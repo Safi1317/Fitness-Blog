@@ -4,14 +4,14 @@
 <p> If you’re on the hunt for an effective tool to help you achieve your fitness goals, it could be just a click away. Click the link below to find suitable workouts to help you stay motivated based on the category you select.</p>
  </div>
 
-<div id="activity" class="d-flex justify-content-between">
+<div id="activity" class="d-flex justify-content-evenly">
   {{#each activities as |activity|}}
   <div class="activitycard">
     <a href="/activity/{{id}}">
       <img class="homepage-images" src="/images/{{activity.filename}}" alt="{{name}}" width="500px" />
     </a>
     <div class="activitycarddiv">
-      <p>{{name}}</p>
+      <h4>{{name}}</h4>
       <div>{{benefit}}</div>
     </div>
   </div>

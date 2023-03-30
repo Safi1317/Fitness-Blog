@@ -50,8 +50,9 @@ main h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: row;
+  /* flex-direction: row; */
   width: 100vw; 
+  align-content: space-around;
 }
 
 p {
@@ -105,6 +106,9 @@ p {
   height: 26rem;
   padding: 0.5rem;
   font-weight: 200;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
 .workoutcard {
