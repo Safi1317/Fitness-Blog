@@ -5,6 +5,10 @@
 main h2 {
   display: flex;
   justify-content: center;
+  color: #1a1e24;
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 700;
 }
 .logoimg {
   width: 15rem;
@@ -24,7 +28,6 @@ main h2 {
   margin: 1rem;
 }
 
-
 .navlinks li a {
   font-weight: 700;
   font-style: italic;
@@ -42,15 +45,22 @@ main h2 {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
-  width: 100vw; 
+  width: 100vw;
+}
+
+.activity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
 }
 
 p {
   text-align: center;
   font: 50px;
   margin: 30px;
-  font-family:Georgia, 'Times New Roman', Times, serif
-  
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .activity img {
   width: 22rem;

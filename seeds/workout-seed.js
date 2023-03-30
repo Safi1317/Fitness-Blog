@@ -39,7 +39,7 @@ const workoutData = [
   },
   {
     name: "Deadlift",
-    filename: "deadlift.gif",
+    filename: "deadliftgif2.webp",
     description:
       "The deadlift is a hip-hinging movement that targets the hamstrings and glutes.",
     difficulty_level: "intense",
