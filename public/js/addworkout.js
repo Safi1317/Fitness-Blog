@@ -7,8 +7,9 @@ async function newFormHandler(event) {
   const equipment = document.querySelector('#workout_equipment').value;
   const username = document.querySelector('#workout_username').value;
 
+  console.log(name);
   // Send fetch request to add a new workout
-  const response = await fetch(`/api/activity/`, {
+  const response = await fetch(`/api/activity/:id`, {
     method: 'POST',
     body: JSON.stringify({
       name,
@@ -32,4 +33,4 @@ async function newFormHandler(event) {
   }
 }
 
-document.querySelector('.new-activity-form').addEventListener('submit', newFormHandler);
+document.querySelector('.new-workout-form').addEventListener('submit', newFormHandler);
