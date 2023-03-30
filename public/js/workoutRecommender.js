@@ -5,20 +5,16 @@ const recommendWorkout = async () => {
   })
     .then((res) => res.json())
     .then((resAsJson) => {
-    //   console.log("resAsJson = ", resAsJson);
+      console.log("resAsJson = ", resAsJson);
+      var dataContainer = document.getElementById("data-container");
+      dataContainer.innerHTML=""
 
-      //   TODO: show some element on the screen with the data from resAsJson
-      const data = JSON.parse(resAsJson);
-
-      const container = document.getElementById('data-container');
-
-      data.forEach(item => {
-        const paragraph = document.createElement('p');
-        paragraph.textContent = item.name, item.type;
-        container.appendChild(paragraph);
-      });
-      
-      alert(resAsJson[0].name);
+      for (const workout of resAsJson) {
+        var li = document.createElement('li');
+        li.textContent = `${workout.name} ... ${workout.type}`;
+        dataContainer.appendChild(li);
+       }
+    
     });
 };
 

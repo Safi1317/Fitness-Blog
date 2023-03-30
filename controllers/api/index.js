@@ -6,8 +6,8 @@ const api_key = process.env.API_KEY;
 router.use("/users", userRoutes);
 
 router.get("/get-workouts", (request, response, next) => {
-  //  TODO: change biceps with request.value
-  fetch("https://api.api-ninjas.com/v1/exercises?muscle=biceps", {
+
+  fetch(`https://api.api-ninjas.com/v1/exercises?muscle=${request.query.muscle}`, {
     headers: {
       "Content-Type": "application/json",
       "X-Api-Key": api_key,
