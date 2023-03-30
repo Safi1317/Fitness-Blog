@@ -6,12 +6,15 @@ const recommendWorkout = async () => {
     .then((res) => res.json())
     .then((resAsJson) => {
       console.log("resAsJson = ", resAsJson);
-
-      //   TODO: show some element on the screen with the data from resAsJson
-      alert(resAsJson[0].name);
+      var dataContainer = document.getElementById("data-container");
+      dataContainer.innerHTML=""
+      for (const workout of resAsJson) {
+        var li = document.createElement('li');
+        li.textContent = `${workout.name} ... ${workout.type}`;
+        dataContainer.appendChild(li);
+       }
     });
 };
-
 document
   .querySelector("#muscle-suggestion-btn")
   .addEventListener("click", recommendWorkout);
