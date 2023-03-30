@@ -39,6 +39,29 @@
 
     <main>
 
+      <p>Select a muscle to get workout suggestions</p>
+      <select id="muscle-suggestion">
+        <option value="abdominals">Abdominals</option>
+        <option value="abductors">Abductors</option>
+        <option value="adductors">Adductors</option>
+        <option value="biceps">Biceps</option>
+        <option value="abdominals">Calves</option>
+        <option value="abductors">Chest</option>
+        <option value="adductors">Forearms</option>
+        <option value="biceps">Glutes</option>
+        <option value="abdominals">Hamstrings</option>
+        <option value="abductors">Lats</option>
+        <option value="adductors">Lower_Back</option>
+        <option value="biceps">Middle_Back</option>
+        <option value="abdominals">Neck</option>
+        <option value="abductors">Quadriceps</option>
+        <option value="adductors">Traps</option>
+        <option value="biceps">Triceps</option>
+        
+      </select>
+      <button id="muscle-suggestion-btn"> Get Suggestions </button>
+      <br/>
+
      
       <div class="activity">
         {{{body}}}
@@ -48,6 +71,8 @@
     {{#if loggedIn}}
       <script src="/js/logout.js"></script>
     {{/if}}
+
+    <script src="/js/workoutRecommender.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script

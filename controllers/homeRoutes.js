@@ -68,16 +68,17 @@ router.get("/workout/:id", async (req, res) => {
 });
 
 router.post("/activity/:id", async (req, res) => {
+  // router.post("/workout/:id", async (req, res) => {
   // create a new workout
   try {
     const newWorkoutData = await Workout.create(
       {
-        name,
-        description,
-        difficulty_level,
-        equipment,
-        reps,
-        username
+        workout_name: req.body.Workout.create,
+        benefits_workout: req.body.Workout.create,
+        difficulty_level: req.body.Workout.create,
+        equipment: req.body.Workout.create,
+        reps: req.body.Workout.create,
+        username: req.body.Workout.create,
       },
       {
         where: {
