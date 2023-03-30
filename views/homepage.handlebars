@@ -1,4 +1,9 @@
-{{#each activities as |activity|}}
+ 
+<h2>Welcome to our Fitness and Health Lifestyle Blog</h2>
+<p> If you’re on the hunt for an effective tool to help you achieve your fitness goals, it could be just a click away. Click the link below to find suitable workouts to help you stay motivated based on the category you select.</p>
+
+<div id="activity">
+  {{#each activities as |activity|}}
   <div class="activitycard">
     <a href="/activity/{{id}}">
       <img src="/images/{{activity.filename}}" alt="{{name}}" width="500px" />
@@ -9,3 +14,7 @@
     </div>
   </div>
 {{/each}}
+</div>
+
+
+
