@@ -85,7 +85,9 @@ main h2 {
   margin: 1rem;
   height: 26rem;
   padding: 0.5rem;
+  font-weight: 200;
 }
+
 .workoutcard {
   width: 26rem;
   /* border: 1px solid; */
@@ -105,16 +107,15 @@ main h2 {
   text-align: center;
 }
 .activitycard p {
+  font-weight: 500;
+}
+.activitycarddiv {
   text-align: center;
 }
-.comments {
-  display: flex;
-  margin: 1rem;
-  flex-direction: column;
-  background-color: blue;
-  width: 70%;
-  color: white;
+.activitycarddiv div {
+  font-weight: 400;
 }
+
 .new-workout-form {
   margin: 2rem;
 }
