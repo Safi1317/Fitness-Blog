@@ -5,37 +5,37 @@ const activitydata = [
     name: "Cardio",
     benefit:
       "Cardio exercises can benefit brain and joint health. It can increase blood flow and improve memory and thinking ability",
-    filename: "cardio.jpg",
+    filename: "cardioimg1.jpg",
   },
   {
     name: "Strength Training",
     benefit:
-      "Increasing muscle strength can help make everyday movements less of a struggle ",
+      "Strength training (a.k.a. resistance training) involves using your own bodyweight or tools, like dumbbells or resistance bands, to build muscle mass, strength, and endurance.",
     filename: "strength_training.jpg",
   },
   {
     name: "Yoga",
     benefit:
-      "it can help build muscle, dramatically boost metabolism, and breathing fully and deeply increases circulation, also helping the metabolism to stay ticking along nicely",
+      "Yoga can help build muscle, dramatically boost metabolism, and breathing fully and deeply increases circulation, also helping the metabolism to stay ticking along nicely",
     filename: "yoga.jpg",
   },
   {
     name: "Plyometrics",
     benefit:
-      "it improved ability to change directions quickly, which fitness professionals may refer to as agility or nimbleness",
+      "Plyometrics is a type of exercise training that uses speed and force of different movements to build muscle power.",
     filename: "polymetrics.jpg",
   },
   {
     name: "Pilates",
     benefit:
-      "The goal of Pilates is to balance your muscles by targeting and strengthening",
+      " Pilates is a form of exercise which concentrates on strengthening the body with an emphasis on core strength. Pilates concentrates on posture, balance and flexibility",
     filename: "pilates.jpg",
   },
   {
     name: "Outdoor excercises",
     benefit:
       "Outdoor exercise can help ward off seasonal affective disorder (SAD), depression and anxiety.",
-    filename: "exerciseoutdoors.jpg",
+    filename: "outdoorimg6.jpg",
   },
 ];
 
