@@ -67,9 +67,10 @@ router.get("/workout/:id", async (req, res) => {
   }
 });
 
-router.post("/activity/:id", async (req, res) => {
+router.post("/activity", async (req, res) => {
   // router.post("/workout/:id", async (req, res) => {
   // create a new workout
+  console.log("hit createworkout route");
   try {
     const newWorkoutData = await Workout.create(
       {
@@ -79,6 +80,33 @@ router.post("/activity/:id", async (req, res) => {
         equipment: req.body.Workout.create,
         reps: req.body.Workout.create,
         username: req.body.Workout.create,
+      }
+      // {
+      // where: {
+      //   id: req.params.id,
+      // },
+      // }
+    );
+
+    res.status(200).json(newWorkoutData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.put("/:id", async (req, res) => {
+  // Where is this action method sending the data from the body of the fetch request? Why?
+  // It is sending the data to the Model so that one workout can be updated with new data in the database.
+  console.log("hit put route");
+  try {
+    const newworkout = await Workout.update(
+      {
+        workout_name: req.body.workout_name,
+        benefits_workout: req.body.benefits_workout,
+        difficulty_level: req.body.difficulty_level,
+        equipment: req.body.equipment,
+        reps: req.body.reps,
+        username: req.body.username,
       },
       {
         where: {
@@ -86,8 +114,9 @@ router.post("/activity/:id", async (req, res) => {
         },
       }
     );
-
-    res.status(200).json(newWorkoutData);
+    // If the database is updated successfully, what happens to the updated data below?
+    // The updated data (workout) is then sent back to handler that dispatched the fetch request.
+    res.status(200).json(newworkout);
   } catch (err) {
     res.status(500).json(err);
   }

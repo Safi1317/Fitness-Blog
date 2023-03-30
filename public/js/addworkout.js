@@ -1,8 +1,8 @@
 async function newFormHandler(event) {
   event.preventDefault();
 
-  const name = document.querySelector("#workout_name").value;
-  const description = document.querySelector("#workout_benefits").value;
+  const workout_name = document.querySelector("#workout_name").value;
+  const benefits_workout = document.querySelector("#benefits_workout").value;
   const reps = document.querySelector("#workout_reps").value;
   const difficulty_level = document.querySelector("#workout_difficulty").value;
   const equipment = document.querySelector("#workout_equipment").value;
