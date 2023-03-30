@@ -72,12 +72,12 @@ router.post("/activity/:id", async (req, res) => {
   try {
     const newWorkoutData = await Workout.create(
       {
-        workout_name: req.body.workout_name,
-        workout_benefits: req.body.workout_benefits,
-        workout_reps: req.body.workout_reps,
-        workout_difficulty: req.body.workout_difficulty,
-        workout_equipment: req.body.workout_equipment,
-        workout_username: req.body.workout_username,
+        name,
+        description,
+        difficulty_level,
+        equipment,
+        reps,
+        username
       },
       {
         where: {
