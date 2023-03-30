@@ -67,55 +67,55 @@ router.get("/workout/:id", async (req, res) => {
   }
 });
 
-router.post("/activity/", async (req, res) => {
-  // create a new workout
-  console.log("hit createworkout route");
-  try {
-    const {
-      name,
-      description,
-      difficulty_level,
-      equipment,
-      reps,
-      username,
-      filename,
-      activity_id,
-      user_id,
-    } = req.body;
+// router.post("/activity/", async (req, res) => {
+//   // create a new workout
+//   console.log("hit createworkout route");
+//   try {
+//     const {
+//       name,
+//       description,
+//       difficulty_level,
+//       equipment,
+//       reps,
+//       username,
+//       filename,
+//       activity_id,
+//       user_id,
+//     } = req.body;
 
-    const newWorkoutData = await Workout.create(
-      {
-        // description,
-        // benefits_workout,
-        // difficulty_level,
-        // equipment,
-        // reps,
-        // username,
+//     const newWorkoutData = await Workout.create(
+//       {
+//         // description,
+//         // benefits_workout,
+//         // difficulty_level,
+//         // equipment,
+//         // reps,
+//         // username,
 
-        name,
-        description,
-        difficulty_level,
-        equipment,
-        reps,
-        username,
-        filename:'cardioimg1.jpg',
-        activity_id:1,
-        user_id:1,
+//         name,
+//         description,
+//         difficulty_level,
+//         equipment,
+//         reps,
+//         username,
+//         filename:'cardioimg1.jpg',
+//         activity_id:1,
+//         user_id:1,
         
-      }
-      // {
-      // where: {
-      //   id: req.params.id,
-      // },
-      // }
-    );
-    console.log("testing");
-    console.log(name);
-    res.status(200).json(newWorkoutData);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
+//       }
+//       // {
+//       // where: {
+//       //   id: req.params.id,
+//       // },
+//       // }
+//     );
+//     console.log("testing");
+//     console.log(name);
+//     res.status(200).json(newWorkoutData);
+//   } catch (err) {
+//     res.status(400).json(err);
+//   }
+// });
 
 router.get("/login", (req, res) => {
   console.log("hit login route");
