@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 main h2 {
   display: flex;
   justify-content: center;
@@ -10,10 +11,12 @@ main h2 {
   line-height: 1.3;
   font-weight: 700;
 }
+
 .logoimg {
   width: 15rem;
   margin: 1rem;
 }
+
 .navbardiv {
   display: flex;
   justify-content: space-between;
@@ -30,7 +33,7 @@ main h2 {
   margin-right:2rem;
  padding: 1% 5%;
 }
-/* .navlinks li {
+.navlinks li {
   margin: 1rem;
 } */
 
@@ -53,6 +56,7 @@ main h2 {
   position: relative;
   z-index: 2;
 }
+
 #activity {
   display: flex;
   flex-wrap: wrap;
@@ -67,16 +71,11 @@ p {
   margin: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .activity img {
   width: 22rem;
 }
-.btn-custom{
-  letter-spacing: 2px;
-  background-color: #888888;
-  border-radius: 10px;
-  border: 15px solid rgb(255, 0, 0);
-  padding: 3%;
-}
+
 .login-card {
   /* border: 1px solid; */
   display: flex;
@@ -89,21 +88,25 @@ p {
   margin: 5%;
   padding: 5%;
 }
+
 .login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .signup-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 .loginsignup {
   margin: 0 auto;
   /* margin: 1rem; */
@@ -111,9 +114,11 @@ p {
   flex-direction: column;
   align-items: center;
 }
+
 .btn {
   margin: 0.5rem;
 }
+
 .activitycard {
   /* border: 1px solid; */
   display: flex;
@@ -138,21 +143,27 @@ p {
   margin: 1rem;
   /* height: 33rem; */
 }
+
 .workoutcard a {
   text-align: center;
 }
+
 .workoutcard p {
   text-align: center;
 }
+
 .activitycard a {
   text-align: center;
 }
+
 .activitycard p {
   font-weight: 500;
 }
+
 .activitycarddiv {
   text-align: center;
 }
+
 .activitycarddiv div {
   font-weight: 400;
 }
@@ -160,6 +171,7 @@ p {
 .new-workout-form {
   margin: 2rem;
 }
+
 .add-workout-container {
   display: flex;
   flex-direction: column;
@@ -167,25 +179,4 @@ p {
   background-color: rgb(97, 186, 216);
   margin: auto;
   padding: 10px;
-}
-
-.intro h2{
-  letter-spacing: 2px;
-}
-.intro:hover{
-   letter-spacing : 4px
-}
-
-.intro p{
-  font-size: 1.5rem;
-  text-align: center;
-  font-style: italic;
-}
-
-.homepage-images{
-  transition: transform .2s;
-
-}
-.homepage-images:hover{
-  transform: scale(1.5);
 }
