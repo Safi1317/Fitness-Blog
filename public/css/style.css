@@ -24,7 +24,7 @@ main h2 {
   margin: 1rem;
 }
 
-#activity 
+
 .navlinks li a {
   font-weight: 700;
   font-style: italic;
@@ -37,7 +37,7 @@ main h2 {
   position: relative;
   z-index: 2;
 }
-
+#activity {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
