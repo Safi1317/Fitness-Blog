@@ -2,6 +2,7 @@ const { Activity } = require("../models");
 
 const activitydata = [
   {
+    id: "1",
     name: "Cardio",
     benefit:
       "Cardio exercises can benefit brain and joint health. It can increase blood flow and improve memory and thinking ability",
