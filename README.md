@@ -8,6 +8,14 @@ Here is the link to our webpage: https://fitnesstalks.herokuapp.com
 
 
 <img width="1281" alt="Live website" src="https://user-images.githubusercontent.com/119647704/228639656-d832232f-d6b1-4322-8753-042e6aafc88d.png">
+
+## Technologies used
+ - Node Js
+ - MySQL
+ - Sequelize
+ - Express Js
+ - Handlebars Js
+ - MVC Architecture
   
    
 
