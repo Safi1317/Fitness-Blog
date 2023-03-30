@@ -31,8 +31,9 @@ main h2 {
 } */
 
 .btn-login{
-  background-color: orange;
+  background-color: rgb(255, 0, 0);
   border:0px;
+
 }
 .navlinks li a {
   font-weight: 700;
@@ -65,15 +66,24 @@ p {
 .activity img {
   width: 22rem;
 }
-
+.btn-custom{
+  letter-spacing: 2px;
+  background-color: #888888;
+  border-radius: 10px;
+  border: 15px solid rgb(255, 0, 0);
+  padding: 3%;
+}
 .login-card {
   /* border: 1px solid; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70vw;
+  height: 50vh;
+  /* width: 70vw; */
   border-radius: 5px;
-  background-color: rgb(97, 186, 216);
+  background-image: linear-gradient(150deg,white,orange);
+  margin: 5%;
+  padding: 5%;
 }
 .login-form {
   display: flex;
