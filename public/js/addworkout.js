@@ -8,6 +8,7 @@ async function newFormHandler(event) {
   const equipment = document.querySelector("#equipment").value;
   const username = document.querySelector("#username").value;
 
+  console.log(name);
   // Send fetch request to add a new workout
   const response = await fetch(`/activity/`, {
     method: "POST",
