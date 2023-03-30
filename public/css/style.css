@@ -1,4 +1,8 @@
-h2 {
+* {
+  margin: 0;
+  padding: 0;
+}
+main h2 {
   display: flex;
   justify-content: center;
 }
@@ -19,6 +23,18 @@ h2 {
 .navlinks li {
   margin: 1rem;
 }
+.navlinks li a {
+  font-weight: 700;
+  font-style: italic;
+  color: #1a1e24;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-right: 60px;
+  position: relative;
+  z-index: 2;
+}
 .activity {
   display: flex;
   flex-wrap: wrap;
@@ -31,13 +47,13 @@ h2 {
 }
 
 .login-card {
-  border: 1px solid;
+  /* border: 1px solid; */
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 70vw;
   border-radius: 5px;
-  background-color: rgb(138, 138, 209);
+  background-color: rgb(97, 186, 216);
 }
 .login-form {
   display: flex;
@@ -69,7 +85,9 @@ h2 {
   margin: 1rem;
   height: 26rem;
   padding: 0.5rem;
+  font-weight: 200;
 }
+
 .workoutcard {
   width: 26rem;
   /* border: 1px solid; */
@@ -89,16 +107,15 @@ h2 {
   text-align: center;
 }
 .activitycard p {
+  font-weight: 500;
+}
+.activitycarddiv {
   text-align: center;
 }
-.comments {
-  display: flex;
-  margin: 1rem;
-  flex-direction: column;
-  background-color: blue;
-  width: 70%;
-  color: white;
+.activitycarddiv div {
+  font-weight: 400;
 }
+
 .new-workout-form {
   margin: 2rem;
 }
@@ -106,6 +123,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(124, 119, 165);
+  background-color: rgb(97, 186, 216);
   margin: 1rem;
 }
