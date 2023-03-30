@@ -1,12 +1,14 @@
- 
+ <div class="intro">
 <h2>Welcome to our Fitness and Health Lifestyle Blog</h2>
-<p> If you’re on the hunt for an effective tool to help you achieve your fitness goals, it could be just a click away. Click the link below to find suitable workouts to help you stay motivated based on the category you select.</p>
 
-<div id="activity">
+<p> If you’re on the hunt for an effective tool to help you achieve your fitness goals, it could be just a click away. Click the link below to find suitable workouts to help you stay motivated based on the category you select.</p>
+ </div>
+
+<div id="activity" class="d-flex justify-content-between">
   {{#each activities as |activity|}}
   <div class="activitycard">
     <a href="/activity/{{id}}">
-      <img src="/images/{{activity.filename}}" alt="{{name}}" width="500px" />
+      <img class="homepage-images" src="/images/{{activity.filename}}" alt="{{name}}" width="500px" />
     </a>
     <div class="activitycarddiv">
       <p>{{name}}</p>

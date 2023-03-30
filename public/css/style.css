@@ -19,12 +19,21 @@ main h2 {
 .navlinks {
   display: flex;
   list-style-type: none;
+  background-color: orange;
+  border-radius: 5px;
+  justify-content: center;
+  margin-left:2rem;
+  margin-right:2rem;
+ padding: 1% 5%;
 }
-.navlinks li {
+/* .navlinks li {
   margin: 1rem;
+} */
+
+.btn-login{
+  background-color: orange;
+  border:0px;
 }
-
-
 .navlinks li a {
   font-weight: 700;
   font-style: italic;
@@ -33,7 +42,7 @@ main h2 {
   letter-spacing: 0.04rem;
   font-size: 18px;
   font-size: 1.125rem;
-  margin-right: 60px;
+  /* margin-right: 60px; */
   position: relative;
   z-index: 2;
 }
@@ -135,4 +144,25 @@ p {
   align-items: center;
   background-color: rgb(97, 186, 216);
   margin: 1rem;
+}
+
+.intro h2{
+  letter-spacing: 2px;
+}
+.intro:hover{
+   letter-spacing : 4px
+}
+
+.intro p{
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.homepage-images{
+  transition: transform .2s;
+
+}
+.homepage-images:hover{
+  transform: scale(1.5);
 }

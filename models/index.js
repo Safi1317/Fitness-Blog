@@ -39,4 +39,4 @@ Comment.belongsTo(User, {
   constraints: false,
 });
 
-module.exports = { User, Activity, Workout, Comment };
+module.exports = {  User,Activity, Workout, Comment };

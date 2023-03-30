@@ -23,9 +23,10 @@
         <img class="logoimg" src="/images/fitneses_talk_logo.png" alt="logo" />
         <ul class="navlinks">
           <li><a href="/">Home</a></li>
+          <li>/</li>
           <li id="loginbutton">
             {{#if loggedIn}}
-              <button id="logout" class="btn-no-style">Logout</button>
+              <button id="logout" class="btn-login">Logout</button>
             {{else}}
               <a href="/login">Login</a>
             {{/if}}
