@@ -2,7 +2,7 @@
 
 ## Description
 
-We created "Fitness talks" based on the wellness of an group using a several fitness exercises to help them easily keep fit. Users have to sign in via their username and password afterward they will be able to see the websites homepage,and login page. The user can choose the workout on the fitness exercises on the homepage. 
+We created "Fitness talks" based on the wellness of an group using a several fitness exercises to help them easily keep fit. Users have to sign in via their username and password afterward they will be able to see the websites homepage, and login page. The user can choose the workout on the fitness exercises on the homepage. 
 
 Here is the link to our webpage: https://fitnesstalks.herokuapp.com
 
