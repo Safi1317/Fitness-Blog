@@ -7,7 +7,7 @@ We created "Fitness talks" based on the wellness of an group using a several fit
 Here is the link to our webpage: https://fitnesstalks.herokuapp.com
 
 
-<img width="1281" alt="Live website" src="https://user-images.githubusercontent.com/119647704/228639656-d832232f-d6b1-4322-8753-042e6aafc88d.png">
+<img width="1280" alt="Screenshot 2023-03-30 122204" src="https://user-images.githubusercontent.com/119647704/228984043-a13d9c42-74e4-4be8-8e72-f0d217747d31.png">
   
    
 
