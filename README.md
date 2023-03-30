@@ -8,10 +8,6 @@ Here is the link to our webpage: https://fitnesstalks.herokuapp.com
 
 
   <img width="1280" alt="Screenshot 2023-03-30 122204" src="https://user-images.githubusercontent.com/119647704/228919096-b80d8a5b-a55d-4cb1-bca6-4d5751e8c0bb.png">
-  
-
-
-<img width="1281" alt="Live website" src="https://user-images.githubusercontent.com/119647704/228639656-d832232f-d6b1-4322-8753-042e6aafc88d.png">
 
 ## Technologies used
  - Node Js
