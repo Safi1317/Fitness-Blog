@@ -10,7 +10,7 @@ router.get("/get-workouts", (request, response, next) => {
     headers: {
       "Content-Type": "application/json",
       "X-Api-Key": "m1kzM2YOAM4ge5YHsdOGyQ==j8BUSIGy53nP4hfg",
-    },ç
+    },
   })
     .then((response) => response.json())
     .then((json) => response.status(200).json(json));
