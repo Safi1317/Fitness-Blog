@@ -67,29 +67,53 @@ router.get("/workout/:id", async (req, res) => {
   }
 });
 
-router.post("/activity/:id", async (req, res) => {
-  // router.post("/workout/:id", async (req, res) => {
+router.post("/activity/", async (req, res) => {
   // create a new workout
+  console.log("hit createworkout route");
   try {
+    const {
+      name,
+      description,
+      difficulty_level,
+      equipment,
+      reps,
+      username,
+      filename,
+      activity_id,
+      user_id,
+    } = req.body;
+
     const newWorkoutData = await Workout.create(
       {
-        workout_name: req.body.Workout.create,
-        benefits_workout: req.body.Workout.create,
-        difficulty_level: req.body.Workout.create,
-        equipment: req.body.Workout.create,
-        reps: req.body.Workout.create,
-        username: req.body.Workout.create,
-      },
-      {
-        where: {
-          id: req.params.id,
-        },
-      }
-    );
+        // description,
+        // benefits_workout,
+        // difficulty_level,
+        // equipment,
+        // reps,
+        // username,
 
+        name,
+        description,
+        difficulty_level,
+        equipment,
+        reps,
+        username,
+        filename:'cardioimg1.jpg',
+        activity_id:1,
+        user_id:1,
+        
+      }
+      // {
+      // where: {
+      //   id: req.params.id,
+      // },
+      // }
+    );
+    console.log("testing");
+    console.log(name);
     res.status(200).json(newWorkoutData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
